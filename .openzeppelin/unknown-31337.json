@@ -1,0 +1,545 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x8A93d247134d91e0de6f96547cB0204e5BE8e5D8",
+    "txHash": "0xb50bfc45a29f3f1470f76fd3baff2a0fb41957752f9363e1ba814c8c2ae7ca84"
+  },
+  "proxies": [
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xae109f1b3719ea9edf80b71f80fdc63d8166340da5aa6019a70e8a193cea1075",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x40918Ba7f132E0aCba2CE4de4c4baF9BD2D7D849",
+      "txHash": "0xc5fcd2e511c492d83aad9400fa4ae090daabc0a5314173761f3aab871316c0e0",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "c1ddfe1a152bc43e93dca653358bb106e6387e883db67aa537d50b6bca189339": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0x8e9109e0e6fafea75556a2f0d69cec6755cb1ed3441cdb20f3858ce05a80fe8c",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:235"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "ticketPrice",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_uint256",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:27"
+          },
+          {
+            "label": "_ticketSerial",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_struct(Counter)1727_storage",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:28"
+          },
+          {
+            "label": "priceFeedEther",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:29"
+          },
+          {
+            "label": "priceFeedDai",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:30"
+          },
+          {
+            "label": "priceFeedLink",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:31"
+          },
+          {
+            "label": "dai",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:45"
+          },
+          {
+            "label": "link",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:47"
+          },
+          {
+            "label": "usdc",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:48"
+          },
+          {
+            "label": "feeRecipient",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_address",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:53"
+          },
+          {
+            "label": "fee",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_uint256",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:56"
+          },
+          {
+            "label": "participants",
+            "offset": 0,
+            "slot": "212",
+            "type": "t_mapping(t_uint256,t_struct(Participant)2190_storage)",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:67"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1202": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Participant)2190_storage)": {
+            "label": "mapping(uint256 => struct Lottery.Participant)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)1727_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Participant)2190_storage": {
+            "label": "struct Lottery.Participant",
+            "members": [
+              {
+                "label": "_ticketSerial",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "player",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "2bb0de447a0ed236e3866fa3b475e12129aa92b02b0dbc7930cea962971cd705": {
+      "address": "0xb9bEECD1A582768711dE1EE7B0A1d582D9d72a6C",
+      "txHash": "0x1544b4f331421215d32a0d92b8025a9df163633a45f3e2f7d6416aa45280e292",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:235"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "ticketPrice",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_uint256",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:27"
+          },
+          {
+            "label": "_ticketSerial",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_struct(Counter)1727_storage",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:28"
+          },
+          {
+            "label": "priceFeedEther",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:29"
+          },
+          {
+            "label": "priceFeedDai",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:30"
+          },
+          {
+            "label": "priceFeedLink",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:31"
+          },
+          {
+            "label": "dai",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:45"
+          },
+          {
+            "label": "link",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:46"
+          },
+          {
+            "label": "usdt",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:47"
+          },
+          {
+            "label": "usdc",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_contract(IERC20)1202",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:48"
+          },
+          {
+            "label": "feeRecipient",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_address",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:53"
+          },
+          {
+            "label": "fee",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_uint256",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:56"
+          },
+          {
+            "label": "participants",
+            "offset": 0,
+            "slot": "212",
+            "type": "t_mapping(t_uint256,t_struct(Participant)2190_storage)",
+            "contract": "Lottery",
+            "src": "contracts/Lottery.sol:67"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1202": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Participant)2190_storage)": {
+            "label": "mapping(uint256 => struct Lottery.Participant)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)1727_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Participant)2190_storage": {
+            "label": "struct Lottery.Participant",
+            "members": [
+              {
+                "label": "_ticketSerial",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "player",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
